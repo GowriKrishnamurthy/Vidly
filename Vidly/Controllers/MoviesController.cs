@@ -11,22 +11,19 @@ namespace Vidly.Controllers
     public class MoviesController : Controller
     {
         // GET: Movies
-        public ActionResult AllMovies()
+        public ActionResult Index()
         {
-            var movie = new Movie() { Name = "Kung Fu Panda" };
-            var customers = new List<Customer>
+            var movie = GetMovies();
+ 
+            return View(movie);
+        }
+        private IEnumerable<Movie> GetMovies()
+        {
+            return new List<Movie>
             {
-                new Customer{Name="Customer 1"},
-                new Customer{Name="Customer 2"}
+                new Movie { Id = 1, Name = "Star Wars" },
+                new Movie { Id = 2, Name = "Avengers" }
             };
-
-            AllMoviesViewModel viewModel = new AllMoviesViewModel
-            {
-                Movies = movie,
-                Customers = customers
-            };
-             
-            return View(viewModel);
         }
     }
 }

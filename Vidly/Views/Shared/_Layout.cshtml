@@ -1,6 +1,4 @@
-﻿@model Vidly.ViewModels.AllMoviesViewModel 
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -10,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @Html.Partial("_NavBar", Model.Movies);
+    @Html.Partial("_NavBar");
     <div class="container body-content">
         @RenderBody()
         <hr />
