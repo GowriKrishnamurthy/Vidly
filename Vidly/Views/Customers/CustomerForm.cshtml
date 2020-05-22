@@ -3,7 +3,7 @@
 @{
     /**/
 
-    ViewBag.Title = "New";
+    ViewBag.Title = "New Customer";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -33,4 +33,5 @@
     @Html.HiddenFor(m => m.Customer.Id);
 
     <button type="submit" class="btn btn-primary"> Save </button>
+    @Html.ActionLink("Back", "Index", "Customers", null, new { @class = "btn btn-primary" })
 }
