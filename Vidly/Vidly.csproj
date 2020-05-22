@@ -188,9 +188,9 @@
     <Compile Include="Migrations\202005220637397_AddNameToMembershiptype.designer.cs">
       <DependentUpon>202005220637397_AddNameToMembershiptype.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202005220646360_SetNameOfMembershipTypes.cs" />
-    <Compile Include="Migrations\202005220646360_SetNameOfMembershipTypes.designer.cs">
-      <DependentUpon>202005220646360_SetNameOfMembershipTypes.cs</DependentUpon>
+    <Compile Include="Migrations\202005220731590_UpdateNameInMembershipTypeTable.cs" />
+    <Compile Include="Migrations\202005220731590_UpdateNameInMembershipTypeTable.designer.cs">
+      <DependentUpon>202005220731590_UpdateNameInMembershipTypeTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -283,8 +283,8 @@
     <EmbeddedResource Include="Migrations\202005220637397_AddNameToMembershiptype.resx">
       <DependentUpon>202005220637397_AddNameToMembershiptype.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202005220646360_SetNameOfMembershipTypes.resx">
-      <DependentUpon>202005220646360_SetNameOfMembershipTypes.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202005220731590_UpdateNameInMembershipTypeTable.resx">
+      <DependentUpon>202005220731590_UpdateNameInMembershipTypeTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
