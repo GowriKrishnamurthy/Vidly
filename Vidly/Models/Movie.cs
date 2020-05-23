@@ -14,7 +14,6 @@ namespace Vidly.Models
         [StringLength(255)]
         public string Name { get; set; }
 
-        [Required]
         // Associate with Genre table
         public Genre Genre { get; set; }
 
