@@ -31,7 +31,6 @@ namespace Vidly.Controllers
             return View(movies);
         }
         
-
         public ActionResult Details(int id)
         {
             var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(x => x.Id == id);
@@ -40,13 +39,13 @@ namespace Vidly.Controllers
 
             return View(movie);
         }
+
         public ActionResult New()
         {
             List<Genre> genres = _context.Genre.ToList();
             
             var viewModel = new MovieFormViewModel
             {
-                Movie = new Movie(),
                 Genre = genres
             };
             return View("MovieForm", viewModel);
