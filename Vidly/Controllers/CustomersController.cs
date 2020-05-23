@@ -42,14 +42,15 @@ namespace Vidly.Controllers
 
         public ActionResult New()
         {
-            List<MembershipType> membershipTypes = _context.MembershipType.ToList();
-            var customer = new Customer();
+            List<MembershipType> membershipTypes = _context.MembershipType.ToList();            
             var viewModel = new CustomerFormViewModel
             {
+                Customer = new Customer(),
                 MembershipTypes = membershipTypes
             };
             return View("CustomerForm", viewModel);
         }
+
 
         [HttpPost]
         public ActionResult Save(Customer customer)
